@@ -1,0 +1,9 @@
+{
+  "name": "whatcha-do-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/mercantilism/whatcha-do-app.git",
+  "author": "mercantilism <samuel.galen.gardner@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
