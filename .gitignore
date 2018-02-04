@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# production
+/build
+/public
+
+# misc
+.DS_Store
+.vscode
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+yarn-debug.log
+yarn-error.log
