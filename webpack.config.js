@@ -21,7 +21,7 @@ module.exports = {
     historyApiFallback: true
   },
   resolve: {
-    extensions: ['.js', '.json']
+    extensions: ['.js', '.jsx', '.json']
   },
   stats: {
     colors: true,
