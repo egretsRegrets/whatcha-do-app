@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 import { v1 } from 'uuid';
+import styled from 'styled-components';
 import Stage from './Stage';
+
+const BoardSegment = styled.section`
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+  &.lowerBoardSegment {
+    border-top: 1px solid black;
+    border-radius: 25px;
+  }
+`;
 
 class Board extends Component {
   state = {
@@ -37,9 +49,13 @@ class Board extends Component {
   };
   render() {
     return (
-      <main>
-        <Stage stage={this.state.whatchaDo} />
-        <Stage stage={this.state.whatchaGonnaDo} />
+      <main className="board">
+        <BoardSegment>
+          <Stage stage={this.state.whatchaDo} />
+        </BoardSegment>
+        <BoardSegment className="lowerBoardSegment">
+          <Stage stage={this.state.whatchaGonnaDo} />
+        </BoardSegment>
       </main>
     );
   }
